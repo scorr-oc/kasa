@@ -1,0 +1,19 @@
+.home-gallery {
+  position: absolute;
+  width: 1240px;
+  height: auto;
+  padding-top: 3%;
+
+  left: 100px;
+  top: 437px;
+  background: #f7f7f7;
+  border-radius: 25px;
+}
+
+.home-cards {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 3%;
+}

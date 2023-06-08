@@ -1,0 +1,39 @@
+.banner {
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 171px;
+}
+
+.banner-background {
+  width: 1240px;
+  height: 223px;
+  background: url('../Assets/homeimg.png');
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-background-img {
+  width: 1240px;
+  height: 223px;
+  background: rgba(0, 0, 0, 0.3);
+  filter: opacity(40);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-p {
+  color: #ffffff;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+}
