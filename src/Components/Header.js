@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom'
 import LOGO from '../Assets/LOGO.svg'
 import '../Styles/Header.css'
-import Banner from './Banner'
 
 const Header = () => {
   return (
     <>
       <nav className="kasa-header">
         <Link to="/">
-          <img src={LOGO} alt="logo-kasa" />
+          <img src={LOGO} alt="logo-kasa" id="logo" />
         </Link>
         <div className="kasa-nav">
           <Link to="/" className="kasa-accueil">
@@ -19,8 +18,6 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-
-      <Banner />
     </>
   )
 }

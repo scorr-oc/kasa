@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom'
-
+import Banner from '../../Components/Banner'
 import Card from '../../Components/Card.js'
 
 import '../../Styles/Home.css'
-import Footer from '../../Components/Footer.js'
+import '../../Styles/Banner.css'
 
 const logements = require('../../Data/logements.json')
 
 const Home = () => {
   return (
-    <>
+    <div>
+      <Banner img="banner-background" />
       <div className="home-gallery">
         <div className="home-cards">
           {logements.map((logement) => {
@@ -33,8 +34,7 @@ const Home = () => {
           })}
         </div>
       </div>
-      <Footer />
-    </>
+    </div>
   )
 }
 

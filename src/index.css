@@ -1,8 +1,9 @@
 body {
-  position: relative;
-  min-height: 100vh;
+  text-align: center;
 }
 
 #root {
-  padding-bottom: 209px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1240px;
 }

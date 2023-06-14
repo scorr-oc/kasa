@@ -3,8 +3,6 @@
   width: 1240px;
   height: auto;
   padding-top: 3%;
-
-  left: 100px;
   top: 437px;
   background: #f7f7f7;
   border-radius: 25px;
@@ -16,4 +14,22 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 3%;
+}
+
+@media screen and (max-width: 992px) {
+  .home-gallery {
+    width: 100%;
+    background: transparent;
+  }
+  .home-cards {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .home-card {
+    width: 100%;
+
+    display: flex;
+  }
 }

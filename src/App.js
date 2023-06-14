@@ -2,10 +2,11 @@ import Home from './Pages/Home'
 import FicheLogement from './Pages/FicheLogement'
 import APropos from './Pages/APropos'
 import Header from './Components/Header'
-import Footer from './Components/Footer'
+
 import Error from './Components/Error'
-import './index.css'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/apropos" element={<APropos />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }

@@ -1,0 +1,10 @@
+.apropos-container {
+  position: absolute;
+  top: 437px;
+  left: 26%;
+}
+
+@media screen and (max-width: 992px) {
+  .apropos-container {
+  }
+}

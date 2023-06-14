@@ -1,10 +1,10 @@
 import '../Styles/Banner.css'
 
-const Banner = () => {
+const Banner = ({ img }) => {
   return (
     <div className="banner">
-      <div className="banner-background ">
-        <div className="banner-background-img">
+      <div className={img}>
+        <div className={'banner-background-img'}>
           <p className="banner-p">Chez vous, partout et ailleurs</p>
         </div>
       </div>

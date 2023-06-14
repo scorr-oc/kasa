@@ -2,7 +2,7 @@
   position: absolute;
   width: 1240px;
   height: 223px;
-  left: 100px;
+
   top: 171px;
 }
 
@@ -17,6 +17,17 @@
   align-items: center;
 }
 
+.banner-background-apropos {
+  width: 1240px;
+  height: 223px;
+  background: url('../Assets/aproposimg.png');
+  background-position: center center;
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .banner-background-img {
   width: 1240px;
   height: 223px;
@@ -36,4 +47,24 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 142.6%;
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner-background {
+    width: 100%;
+  }
+
+  .banner-background-apropos {
+    width: 100%;
+  }
+
+  .banner-p {
+    text-align: left;
+    margin: 5%;
+    font-size: xx-large;
+  }
 }

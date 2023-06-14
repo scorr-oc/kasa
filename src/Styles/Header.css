@@ -2,18 +2,31 @@
   position: absolute;
   width: 1240px;
   height: 68px;
-  left: 100px;
+
   top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
+#logo {
+  height: 68px;
+  width: 210px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
+  display: flex;
+  align-items: center;
+}
+
 .kasa-nav {
   display: flex;
+  align-items: center;
+  right: 0;
 }
 
 .kasa-accueil {
-  margin-right: 70px;
+  padding-right: 70px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -40,4 +53,23 @@
 
 .kasa-apropos:focus {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .kasa-header {
+    width: 100%;
+  }
+
+  #logo {
+    height: 47px;
+    width: 145px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+  }
+
+  .kasa-accueil,
+  .kasa-apropos {
+    font-size: 90%;
+  }
 }
