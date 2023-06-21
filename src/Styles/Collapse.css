@@ -9,6 +9,7 @@
 .collapse-container {
   height: 47px;
   width: 1023px;
+
   margin-bottom: 2%;
   border-radius: 5px;
   background: #ff6060;
@@ -107,7 +108,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 142.6%;
-  /* or 34px */
 
   color: #ff6060;
 }

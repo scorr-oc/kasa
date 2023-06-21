@@ -11,31 +11,16 @@
 #logo {
   height: 68px;
   width: 210px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-
-  display: flex;
-  align-items: center;
-}
-
-.kasa-nav {
-  display: flex;
-  align-items: center;
-  right: 0;
 }
 
 .kasa-accueil {
   height: 34px;
   width: 136px;
-  left: 1031px;
-  top: 57px;
+  top: 15px;
 
   position: absolute;
   left: 71.6%;
   right: 18.96%;
-  top: 5.57%;
-  bottom: 91.11%;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -45,7 +30,7 @@
   /* or 34px */
 
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   text-align: right;
 
   color: #ff6060;
@@ -59,14 +44,7 @@
 .kasa-apropos {
   height: 34px;
   width: 116px;
-  left: 1224px;
-  top: 57px;
-
-  position: absolute;
-  left: 85%;
-  right: 6.94%;
-  top: 5.57%;
-  bottom: 91.11%;
+  margin-top: 15px;
 
   font-family: 'Montserrat';
   font-style: normal;

@@ -1,0 +1,126 @@
+.logement-container {
+  width: 1240px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logement-title-container {
+  height: 77px;
+  width: 635px;
+  flex-grow: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logement-title {
+  height: 51px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+
+  color: #ff6060;
+}
+
+.logement-location {
+  height: 26px;
+  margin-top: -20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  color: #ff6060;
+}
+
+.logement-host {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 24.12px;
+}
+
+.logement-host-name {
+  width: 93px;
+  height: 52px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+
+  color: #ff6060;
+}
+.logement-host-picture {
+  width: 64px;
+  height: 64px;
+  top: 567px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logement-rating {
+  display: flex;
+  margin-top: 23px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logement-tags {
+  display: flex;
+}
+.tag-container {
+  height: 25px;
+  width: 115px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff6060;
+  border-radius: 10px;
+}
+
+.tag-p {
+  width: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.logement-star {
+  height: 36px;
+  width: 196px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.star {
+  margin-right: 15.25px;
+}
+
+.logement-collapse {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}

@@ -17,7 +17,7 @@ const Home = () => {
             return (
               <Link
                 className="home-cards"
-                to={`logement/:${logement.id}`}
+                to={`logement/${logement.id}`}
                 key={logement.id}
               >
                 <div className="home-card">

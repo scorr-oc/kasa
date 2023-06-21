@@ -2,7 +2,6 @@ import Home from './Pages/Home'
 import FicheLogement from './Pages/FicheLogement'
 import APropos from './Pages/APropos'
 import Header from './Components/Header'
-
 import Error from './Components/Error'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'

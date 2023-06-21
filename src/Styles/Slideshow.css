@@ -1,0 +1,71 @@
+.logement-banner {
+  height: 415px;
+  width: 1240px;
+
+  margin-top: 128px;
+
+  background: #000000;
+  mix-blend-mode: darken;
+  filter: opacity(30);
+  border-radius: 25px;
+}
+
+.logement-img {
+  height: 415px;
+  width: 1240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+  border-radius: 25px;
+}
+
+.arrow-left-container {
+  position: absolute;
+  height: 119px;
+  width: 96px;
+  margin-left: 23px;
+  margin-top: 157px;
+}
+.arrow-left {
+  height: 79px;
+  width: 47px;
+  border: none;
+
+  background: url('../Assets/arrow-left.svg');
+}
+
+.arrow-right-container {
+  position: absolute;
+  height: 119px;
+  width: 96px;
+  margin-top: 157px;
+  margin-left: 1100px;
+}
+
+.arrow-right {
+  height: 79px;
+  width: 47px;
+  border: none;
+
+  background: url('../Assets/arrow-right.svg');
+}
+
+.logement-compteur {
+  position: absolute;
+  height: 32.402400970458984px;
+  width: 24px;
+  margin-left: 607px;
+  margin-top: 358px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #ffffff;
+}
