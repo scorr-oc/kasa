@@ -1,5 +1,6 @@
 .logement-container {
-  width: 1240px;
+  /* width: 1240px; */
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -52,8 +53,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-  /* or 26px */
-
   display: flex;
   align-items: flex-end;
   text-align: right;
@@ -63,7 +62,6 @@
 .logement-host-picture {
   width: 64px;
   height: 64px;
-  top: 567px;
   margin-left: 10px;
   border-radius: 50%;
   background-size: cover;
@@ -123,4 +121,64 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
+}
+
+@media screen and (max-width: 1239px) {
+  .logement-container {
+    width: 100%;
+    display: block;
+  }
+
+  .logement-title {
+    font-size: 18px;
+  }
+
+  .logement-location {
+    font-size: 14px;
+  }
+  .logement-rating {
+    width: 100%;
+    display: block;
+  }
+
+  .logement-host {
+    justify-content: flex-end;
+    align-items: start;
+  }
+
+  .logement-host-name {
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .logement-host-picture {
+    width: 32px;
+    height: 32px;
+    margin-top: 30px;
+    align-items: end;
+  }
+
+  .logement-star {
+    justify-content: start;
+    margin-top: -60px;
+  }
+
+  .star {
+    width: 19px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  .tag-container {
+    margin-top: -110px;
+  }
+
+  .tag-p {
+    font-size: 10px;
+  }
+  .logement-collapse {
+    width: 100%;
+    display: block;
+  }
 }

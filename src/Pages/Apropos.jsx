@@ -1,7 +1,7 @@
-import Banner from '../../Components/Banner'
-import Collapse from '../../Components/Collapse'
-import '../../Styles/Banner.css'
-import '../../Styles/Apropos.css'
+import Banner from '../Components/Banner'
+import Collapse from '../Components/Collapse'
+import '../Styles/Banner.css'
+import '../Styles/Apropos.css'
 
 const APropos = () => {
   return (

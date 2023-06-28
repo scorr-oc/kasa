@@ -1,8 +1,8 @@
 .home-gallery {
-  position: absolute;
-  width: 1240px;
+  width: 100%;
   height: auto;
   padding-top: 3%;
+
   top: 437px;
   background: #f7f7f7;
   border-radius: 25px;
@@ -16,7 +16,7 @@
   padding-bottom: 3%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1239px) {
   .home-gallery {
     width: 100%;
     background: transparent;

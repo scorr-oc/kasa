@@ -1,16 +1,32 @@
 import { useParams } from 'react-router-dom'
-import Slideshow from '../../Components/Slideshow'
-import '../../Styles/FicheLogement.css'
-import star from '../../Assets/star.svg'
-import star_active from '../../Assets/star_active.svg'
-import Collapse from '../../Components/Collapse'
 import { useNavigate } from 'react-router-dom'
+import '../Styles/FicheLogement.css'
 
-const logements = require('../../Data/logements.json')
+import Slideshow from '../Components/Slideshow'
+import Collapse from '../Components/Collapse'
+import star from '../Assets/star.svg'
+import star_active from '../Assets/star_active.svg'
+
+const logements = require('../Data/logements.json')
 
 const FicheLogement = () => {
   const { id } = useParams()
   const navigate = useNavigate()
+
+  const rating = []
+  const stars = []
+  logements.map((logement) => {
+    if (logement.id === id) {
+      for (let i = 0; i < logement.rating; i++) {
+        rating.push(i + 1)
+      }
+    }
+  })
+  if (rating.length < 5) {
+    for (let i = 0; i < 5 - rating.length; i++) {
+      stars.push(i + 1)
+    }
+  }
 
   return (
     <div>
@@ -42,11 +58,21 @@ const FicheLogement = () => {
                 })}
               </div>
               <div className="logement-star">
-                <img src={star} className="star" alt="star" />
-                <img src={star} className="star" alt="star" />
-                <img src={star} className="star" alt="star" />
-                <img src={star} className="star" alt="star" />
-                <img src={star} className="star" alt="star" />
+                {rating.map((rate, index) => {
+                  return (
+                    <img
+                      src={star_active}
+                      className="star"
+                      alt="star"
+                      key={index}
+                    />
+                  )
+                })}
+                {stars.map((starGrey, index) => {
+                  return (
+                    <img src={star} className="star" alt="star" key={index} />
+                  )
+                })}
               </div>
             </div>
             <div className="logement-collapse">
@@ -54,16 +80,23 @@ const FicheLogement = () => {
                 title="Description"
                 text={logement.description}
                 style={{
-                  width: '582px',
-                  fontSize: '18px',
+                  width: '97%',
                 }}
+                styleP={{ widht: '550px', fontSize: '18px' }}
               />
               <Collapse
                 title="Équipement"
-                text={logement.equipments.map((equipments) => {
-                  return <p style={{ margin: '0' }}>{equipments}</p>
+                text={logement.equipments.map((equipments, index) => {
+                  return (
+                    <div key={index}>
+                      <p style={{ margin: '0' }}>{equipments}</p>
+                    </div>
+                  )
                 })}
-                style={{ width: '582px', fontSize: '18px' }}
+                style={{
+                  width: '97%',
+                }}
+                styleP={{ fontSize: '18px' }}
               />
             </div>
           </div>

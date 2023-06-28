@@ -1,16 +1,13 @@
 .bloc-container {
   width: 1023px;
-  height: 184px;
-  left: 208px;
-  top: 408px;
-  margin-bottom: 2%;
+  width: 100%;
+  margin-bottom: 31px;
 }
 
 .collapse-container {
   height: 47px;
-  width: 1023px;
 
-  margin-bottom: 2%;
+  margin-bottom: 31px;
   border-radius: 5px;
   background: #ff6060;
   border-radius: 5px;
@@ -21,7 +18,6 @@
 
 .collapse-container-open {
   height: 47px;
-  width: 1023px;
   border-radius: 5px;
   background: #ff6060;
   border-radius: 5px;
@@ -41,8 +37,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-  /* identical to box height, or 26px */
-
   display: flex;
   align-items: center;
 
@@ -86,22 +80,13 @@
 
 .p-container {
   height: auto;
-  width: 1023px;
-  left: 0px;
-  top: 38px;
-
-  left: 0%;
-  right: 0%;
-  top: 20.65%;
-  bottom: 0%;
-
   background: #f7f7f7;
   border-radius: 5px;
 }
 
 .p-text {
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   margin: 0;
   font-family: 'Montserrat';
   font-style: normal;
@@ -112,11 +97,22 @@
   color: #ff6060;
 }
 
-@media screen and (max-width: 992px) {
-  .bloc-container,
-  .collapse-container,
-  .collapse-container-open,
-  .p-container {
+@media screen and (max-width: 1239px) {
+  .bloc-container {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .collapse-container {
+    width: 100%;
+  }
+
+  .collapse-p {
+    font-size: 13px;
+  }
+
+  .p-text {
+    font-size: 12px;
   }
 }

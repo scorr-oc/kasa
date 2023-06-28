@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Styles/Collapse.css'
 
-function Collapse({ title, text, style }) {
+function Collapse({ title, text, style, styleP }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return isOpen ? (
@@ -14,18 +14,20 @@ function Collapse({ title, text, style }) {
           </button>
         </div>
         <div className="p-container" style={style}>
-          <p className="p-text" style={style}>
+          <div className="p-text" style={styleP}>
             {text}
-          </p>
+          </div>
         </div>
       </div>
     </>
   ) : (
-    <div className="collapse-container" style={style}>
-      <p className="collapse-p">{title}</p>
-      <button className="vector-close" onClick={() => setIsOpen(true)}>
-        <div className="vector"></div>
-      </button>
+    <div className="bloc-container" style={style}>
+      <div className="collapse-container" style={style}>
+        <p className="collapse-p">{title}</p>
+        <button className="vector-close" onClick={() => setIsOpen(true)}>
+          <div className="vector"></div>
+        </button>
+      </div>
     </div>
   )
 }

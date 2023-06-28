@@ -1,8 +1,7 @@
 .logement-banner {
   height: 415px;
-  width: 1240px;
-
-  margin-top: 128px;
+  /* width: 1240px; */
+  width: 100%;
 
   background: #000000;
   mix-blend-mode: darken;
@@ -12,7 +11,6 @@
 
 .logement-img {
   height: 415px;
-  width: 1240px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,12 +18,17 @@
   border-radius: 25px;
 }
 
+.arrow-container {
+  padding-top: 157px;
+  display: flex;
+  justify-content: space-between;
+}
 .arrow-left-container {
-  position: absolute;
   height: 119px;
   width: 96px;
-  margin-left: 23px;
-  margin-top: 157px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .arrow-left {
   height: 79px;
@@ -36,11 +39,11 @@
 }
 
 .arrow-right-container {
-  position: absolute;
   height: 119px;
   width: 96px;
-  margin-top: 157px;
-  margin-left: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow-right {
@@ -52,20 +55,49 @@
 }
 
 .logement-compteur {
-  position: absolute;
-  height: 32.402400970458984px;
-  width: 24px;
-  margin-left: 607px;
-  margin-top: 358px;
+  margin-top: 100px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-
   display: flex;
-  align-items: flex-end;
-  text-align: center;
+  justify-content: center;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 1239px) {
+  .logement-banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow-container {
+    padding-top: 200px;
+  }
+
+  .arrow-left-container,
+  .arrow-right-container {
+    width: 24px;
+    height: 24px;
+  }
+  .arrow-left {
+    width: 24px;
+    height: 24px;
+    background: url('../Assets/arrowSmall_left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .arrow-right {
+    width: 24px;
+    height: 24px;
+    background: url('../Assets/arrowSmall_right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logement-compteur {
+    display: none;
+  }
 }

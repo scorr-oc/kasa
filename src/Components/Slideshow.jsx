@@ -38,15 +38,19 @@ const Slideshow = () => {
       >
         {pictures[0].length > 1 ? (
           <>
-            {' '}
-            <div className="arrow-left-container">
-              <button className="arrow-left" onClick={handleClickLeft}></button>
-            </div>
-            <div className="arrow-right-container">
-              <button
-                className="arrow-right"
-                onClick={handleClickRight}
-              ></button>
+            <div className="arrow-container">
+              <div className="arrow-left-container">
+                <button
+                  className="arrow-left"
+                  onClick={handleClickLeft}
+                ></button>
+              </div>
+              <div className="arrow-right-container">
+                <button
+                  className="arrow-right"
+                  onClick={handleClickRight}
+                ></button>
+              </div>
             </div>
             <p className="logement-compteur">
               {currentIndex + 1}/{pictures[0].length}

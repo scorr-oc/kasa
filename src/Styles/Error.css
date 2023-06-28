@@ -37,7 +37,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-  /* or 51px */
 
   display: flex;
   align-items: flex-end;
@@ -45,5 +44,21 @@
   color: #ff6060;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1239px) {
+  .error-container {
+    width: 100%;
+  }
+  .error-img {
+    width: 198px;
+    height: 90px;
+  }
+
+  .error-message {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .error-p {
+    font-size: 14px;
+  }
 }

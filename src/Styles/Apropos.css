@@ -1,8 +1,12 @@
 .apropos-container {
-  position: absolute;
-  top: 437px;
-  left: 26%;
+  width: 1023px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@edia screen and (max-width: 992px) {
+@media screen and (max-width: 1239px) {
+  .apropos-container {
+    width: 100%;
+  }
 }

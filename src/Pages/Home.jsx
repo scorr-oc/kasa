@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import Banner from '../../Components/Banner'
-import Card from '../../Components/Card.js'
+import Banner from '../Components/Banner'
+import Card from '../Components/Card'
 
-import '../../Styles/Home.css'
-import '../../Styles/Banner.css'
+import '../Styles/Home.css'
+import '../Styles/Banner.css'
 
-const logements = require('../../Data/logements.json')
+const logements = require('../Data/logements.json')
 
 const Home = () => {
   return (
