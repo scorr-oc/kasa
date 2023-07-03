@@ -1,7 +1,6 @@
 .logement-banner {
-  height: 415px;
-  /* width: 1240px; */
   width: 100%;
+  height: 415px;
 
   background: #000000;
   mix-blend-mode: darken;

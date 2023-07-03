@@ -1,5 +1,4 @@
-import { Navigate, useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import '../Styles/FicheLogement.css'
 
 import Slideshow from '../Components/Slideshow'

@@ -1,16 +1,13 @@
 .bloc-container {
-  width: 1023px;
   width: 100%;
   margin-bottom: 31px;
 }
 
 .collapse-container {
   height: 47px;
-
+  border-radius: 5px;
   margin-bottom: 31px;
-  border-radius: 5px;
   background: #ff6060;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +17,6 @@
   height: 47px;
   border-radius: 5px;
   background: #ff6060;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,8 +25,6 @@
 .collapse-p {
   height: 26px;
   width: 124px;
-  left: 20px;
-  top: 13px;
   margin-left: 2%;
   font-family: 'Montserrat';
   font-style: normal;
@@ -47,10 +41,6 @@
   height: 32px;
   width: 32px;
   margin-right: 2%;
-  left: 97.17%;
-  right: -0.29%;
-  top: 14.89%;
-  bottom: 17.02%;
   transform: rotate(0deg);
   background: transparent;
   border: none;
@@ -59,10 +49,6 @@
   height: 32px;
   width: 32px;
   margin-right: 2%;
-  left: 97.17%;
-  right: -0.29%;
-  top: 14.89%;
-  bottom: 17.02%;
   transform: rotate(180deg);
   background: transparent;
   border: none;
