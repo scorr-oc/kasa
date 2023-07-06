@@ -6,6 +6,7 @@ const logements = require('../Data/logements.json')
 
 const Slideshow = () => {
   const { id } = useParams()
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const pictures = []
   logements.map((logement) => {
@@ -16,8 +17,6 @@ const Slideshow = () => {
     const img = { url: image }
     return picture.push(img)
   })
-
-  const [currentIndex, setCurrentIndex] = useState(0)
 
   const handleClickRight = () => {
     currentIndex + 1 < pictures[0].length

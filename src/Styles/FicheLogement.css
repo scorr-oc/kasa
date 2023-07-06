@@ -122,7 +122,7 @@
   margin-top: 2%;
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1024px) {
   .logement-container {
     width: 100%;
     display: block;
@@ -159,9 +159,18 @@
     align-items: end;
   }
 
+  .logement-tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag-container {
+    margin-bottom: 125px;
+  }
+
   .logement-star {
     justify-content: start;
-    margin-top: -60px;
+    margin-top: -120px;
   }
 
   .star {
